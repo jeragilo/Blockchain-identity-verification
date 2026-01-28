@@ -30,16 +30,37 @@ This is a full-stack Web3 DApp that allows users to securely register their iden
 
 ---
 
-## 📂 Folder Structure
+<pre lang="markdown">
+### 📁 Folder Structure
 
-.
-├── smart-contracts # Solidity + Hardhat backend
-│ └── contracts
-│ └── scripts
-├── dapp-frontend # Next.js frontend DApp
-│ └── pages
-│ └── styles
-│ └── constants
+```plaintext
+Blockchain-identity-verification/
+│
+├── blockchain/                   # Smart Contract Backend
+│   ├── contracts/               # Solidity contracts (e.g., IdentityVerification.sol)
+│   ├── scripts/                 # Deployment scripts (e.g., deploy.js)
+│   ├── test/                    # Smart contract test files (e.g., Lock.js)
+│   ├── .env                     # Env vars (PRIVATE_KEY, ALCHEMY_API_URL)
+│   ├── hardhat.config.js        # Hardhat config for networks & plugins
+│   ├── package.json             # Backend dependencies
+│   └── README.md                # (Optional) backend-only doc
+│
+├── frontend/                    # Next.js Frontend DApp
+│   ├── pages/                   # App entry (_app.tsx), homepage (index.tsx)
+│   ├── constants/               # Contract ABI and address
+│   ├── styles/                  # Tailwind CSS (e.g., globals.css)
+│   ├── public/                  # Icons & static assets
+│   ├── tailwind.config.ts       # Tailwind config
+│   ├── postcss.config.mjs       # PostCSS config
+│   ├── tsconfig.json            # TypeScript config
+│   ├── package.json             # Frontend dependencies
+│   └── README.md                # (Optional) frontend-only doc
+│
+├── .gitignore
+├── README.md                    # Project overview & setup guide
+└── LICENSE                      # (Optional) open source license
+```
+</pre>
 
 
 ---
